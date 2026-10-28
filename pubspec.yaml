@@ -1,0 +1,29 @@
+name: modul6_local_storage
+description: "Modul 6 - Local Storage: To-do List dengan Shared Preferences & Hive"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # Local storage
+  shared_preferences: ^2.5.3   # simpan data kecil key-value (status login)
+  hive: ^2.2.3                 # database NoSQL lokal (data utama: to-do)
+  hive_flutter: ^1.1.0         # integrasi Hive dengan Flutter (initFlutter, listenable)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+  # Code generator untuk membuat TodoAdapter (todo.g.dart)
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.8
+
+flutter:
+  uses-material-design: true
